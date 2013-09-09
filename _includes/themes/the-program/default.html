@@ -9,8 +9,13 @@
 	<title>{{ page.title }}</title>
 	<meta name="author" content="{{ site.author.name }}">
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
+	<link rel="stylesheet_beiyuu" href="/css/default.css" type="text/css" />
 	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+	<style type="text/css">
+		.unit-article header{border: none;}
+		.unit-article .unit-foot{border:none }
+	</style>
 </head>
 <body>
 
@@ -25,8 +30,8 @@
 						<li class="page"><a href="/pages.html">pages</a></li>
 						<li class="category"><a href="/categories.html">categories</a></li>
 						<li class="tag"><a href="/tags.html">tags</a></li>
-						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
-									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+						<!-- <li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li> -->
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->
@@ -38,20 +43,22 @@
 				<div class="entry-content">
 					{{ content }}
 				</div>
-			</div><!-- unit-inner -->
-		</div><!-- unit-body -->
-	</div><!-- body -->
+			</div>
+		</div>
+	</div>
+
 	<footer class="the-footer">
 		<div class="unit-foot">
 			<div class="unit-inner unit-foot-inner">
 				<div class="misc vcard">
 					<h4>about</h4>
+					木瓜移动产品经理一枚。曾经是工程师。联系我：
 					<ul>
 						<li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
-						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
-						<li class="twitter"><a href="http://weibo.com/{{ site.author.weibo }}/" rel="me">weibo.com/{{ site.author.weibo }}</a></li>
+						<li class="weibo"><a href="http://weibo.com/{{ site.author.weibo }}/" rel="me">Weibo</a></li>
 						<!--<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a></li> -->
 					</ul>
+					博客托管在我的<a href="http://github.com/{{ site.author.github }}/" rel="me">Github</a>
 				</div><!-- misc -->
 				<p class="licence">
 					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>

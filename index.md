@@ -13,7 +13,10 @@ layout: page
             <h2>
               <a href="{{ post.url }}">{{ post.title }}</a>
             </h2>
-            <span class="title-desc">{{ post.description }}</span>
+            <div style="color: #999;">
+              <span class="title-desc">{{ post.description }}</span>
+            </div>
+          
         </li>
 
   {% endfor %}
